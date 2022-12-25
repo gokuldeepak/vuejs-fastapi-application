@@ -11,15 +11,20 @@ export default {
   name: 'HelloWorld',
   data: function() {
     return {
-      msg: msg,
+      msg: '',
     };
   },
   methods: {
     getMessage() {
-      axios.get('/')
-        .then((res) => {
-          //this.msg = res.data;
-          this.msg = 'Testingdata';
+    axios.get(`http://192.168.0.106:5000/`)
+    .then(response => {
+      // JSON responses are automatically parsed.
+      this.msg = response.data
+
+      // axios.get('/')
+      //   .then((res) => {
+      //     this.msg = res;
+      //     //this.msg = 'Testingdata';
         })
         .catch((error) => {
           console.error(error);
