@@ -15,7 +15,7 @@
   import { mapGetters, mapActions } from 'vuex';
   
   export default defineComponent({
-    name: 'Profile',
+    name: 'ProfileView',
     created: function() {
       return this.$store.dispatch('viewMe');
     },

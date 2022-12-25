@@ -54,7 +54,7 @@
   import { mapGetters, mapActions } from 'vuex';
   
   export default defineComponent({
-    name: 'Dashboard',
+    name: 'DashboardView',
     data() {
       return {
         form: {
