@@ -9,7 +9,7 @@ import axios from 'axios';
 
 export default {
   name: 'HelloWorld',
-  data() {
+  data: function() {
     return {
       msg: msg,
     };
@@ -18,7 +18,8 @@ export default {
     getMessage() {
       axios.get('/')
         .then((res) => {
-          this.msg = res.data;
+          //this.msg = res.data;
+          this.msg = 'Testingdata';
         })
         .catch((error) => {
           console.error(error);
