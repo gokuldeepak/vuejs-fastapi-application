@@ -1,7 +1,7 @@
 <template>
   <div>
-    <h1> Hi Welcome, GokulDeepak</h1>
-    <p>{{ msg }}</p>
+    <h1> Hi, Welcome {{ msg }}</h1>
+    <p></p>
   </div>
 </template>
 
