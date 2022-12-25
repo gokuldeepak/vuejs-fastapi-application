@@ -23,7 +23,7 @@
   import { mapActions } from 'vuex';
   
   export default defineComponent({
-    name: 'Register',
+    name: 'RegisterView',
     data() {
       return {
         user: {
